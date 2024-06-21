@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="form-group">
+                <input type="text" id="idInstance" placeholder="idInstance">
+            </div>
+            <div class="form-group">
+                <input type="text" id="apiTokenInstance" placeholder="ApiTokenInstance">
+            </div>
+            <div class="form-group">
+                <button onclick="getSettings()">getSettings</button>
+            </div>
+            <div class="form-group">
+                <button onclick="getStateInstance()">getStateInstance</button>
+            </div>
+            <div class="form-group">
+                <input type="text" id="chatId" placeholder="numberPhonee@c.us">
+            </div>
+            <div class="form-group">
+                <input type="text" id="message" placeholder="Hello World!">
+            </div>
+            <div class="form-group">
+                <button onclick="sendMessage()">sendMessage</button>
+            </div>
+            <div class="form-group">
+                <input type="text" id="fileChatId" placeholder="numberPhonee@c.us">
+            </div>
+            <div class="form-group">
+                <input type="text" id="fileUrl" placeholder="https://mysite.com/img/horse.png">
+            </div>
+            <div class="form-group">
+                <button onclick="sendFileByUrl()">sendFileByUrl</button>
+            </div>
+        </div>
+        <div class="right-panel">
+            <label for="response">Ответ:</label>
+            <textarea id="response" readonly></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
